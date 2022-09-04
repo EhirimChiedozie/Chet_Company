@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Our products</h1>
+    <div class="container">
+        <article class="article-content article-image">
+            <h4 style="margin-top: 10%;">We offer a variety of quality parfait delivered right on your door-step</h4>
+            <img src="{{url_for('static', filename='cheta/parf.png')}}" width="400" height="400">
+        </article>
+    </div>
+    <div class="container">
+        <article class="article content article-image">
+            <h4 style="margin-top: 10%;">Imagine having one or more of these</h4>
+            <img src="{{url_for('static', filename='cheta/parfa.png')}}" width="400" height="400">
+        </article>
+    </div>
+    <div class="container">
+        <article class="article content article-image">
+            <h4 style="margin-top: 10%;">At an affordable price</h4>
+            <img src="{{url_for('static', filename='cheta/parfai.png')}}" width="400" height="400">
+        </article>
+    </div>
+    <div class="container">
+        <article class="article content article-image">
+            <h4 style="margin-top: 10%;">So yummy!!!</h4>
+            <img src="{{url_for('static', filename='cheta/parfait.png')}}" width="400" height="400">
+        </article>
+    </div>
+    <div class="navbar">
+        <p>What is stopping you from making an <a href="{{url_for('order')}}">Order</a></p>
+    </div>
+{% endblock content %}
